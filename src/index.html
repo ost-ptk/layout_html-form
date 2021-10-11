@@ -16,7 +16,7 @@
       method="post"
       autocomplete="off"
       onsubmit="onSubmit()"
-      class="main-form"
+      class="main-form__fieldset"
     >
 
       <fieldset class="main-form">
@@ -47,7 +47,8 @@
             name="old"
             id="how-old"
             value="12"
-            min="0" max="100"
+            min="12"
+            max="100"
           >
         </div>
 
@@ -62,10 +63,11 @@
 
         <div class="form-field">
           <label for="term-of-agree">I accept the lhe term of the agreement</label>
-          <input type="checkbox"
-                 name="term-of-agree"
-                 id="term-of-agree"
-                 required
+          <input
+            type="checkbox"
+            name="term-of-agree"
+            id="term-of-agree"
+            required
           >
         </div>
       </fieldset>
@@ -90,6 +92,7 @@
             type="password"
             name="password"
             minlength="8"
+            maxlength="21"
             id="pass"
             required
           >
@@ -179,8 +182,6 @@
 
       <button
         type="submit"
-        value="submit"
-        class="main-button"
       >
         Submit
       </button>
