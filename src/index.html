@@ -14,7 +14,6 @@
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
-      autocomplete="off"
       onsubmit="onSubmit()"
       class="main-form"
     >
@@ -28,6 +27,7 @@
             type="text"
             id="surname"
             name="surname"
+            autocomplete="off"
           >
         </div>
 
@@ -37,15 +37,16 @@
             type="text"
             id="name"
             name="name"
+            autocomplete="off"
           >
         </div>
 
         <div class="form-field">
-          <label for="how-old">How old are You?</label>
+          <label for="howOld">How old are You?</label>
           <input
             type="number"
             name="old"
-            id="how-old"
+            id="howOld"
             value="12"
             min="12"
             max="100"
@@ -53,20 +54,20 @@
         </div>
 
         <div class="form-field">
-          <label for="date-of-birth">Full date of birth:</label>
+          <label for="dateOfBirth">Full date of birth:</label>
           <input
             type="date"
             name="date"
-            id="date-of-birth"
+            id="dateOfBirth"
           >
         </div>
 
         <div class="form-field">
-          <label for="term-of-agree">I accept the lhe term of the agreement</label>
+          <label for="termOfAgree">I accept the lhe term of the agreement</label>
           <input
             type="checkbox"
-            name="term-of-agree"
-            id="term-of-agree"
+            name="termOfAgree"
+            id="termOfAgree"
             required
           >
         </div>
@@ -108,18 +109,18 @@
             type="radio"
             name="cats"
             value="yes"
-            id="love-cats"
+            id="loveCats"
           >
 
-          <label for="love-cats">Yes</label>
+          <label for="loveCats">Yes</label>
 
           <input
             type="radio"
             name="cats"
             value="no"
-            id="dont-love"
+            id="dontLove"
           >
-          <label for="dont-love">No</label>
+          <label for="dontLove">No</label>
         </div>
 
         <div class="form-field">
@@ -154,10 +155,10 @@
         </div>
 
         <div class="form-field">
-          <label for="time-to-bed">How do you rate our work?</label>
+          <label for="timeToBed">How do you rate our work?</label>
           <input
             type="range"
-            id="time-to-bed"
+            id="timeToBed"
             value="0"
             name="work"
           >
