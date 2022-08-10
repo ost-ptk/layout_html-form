@@ -7,3 +7,7 @@ fieldset {
   display: block;
   margin-bottom: 10px;
 }
+
+.last_input {
+  margin-bottom: 0;
+}

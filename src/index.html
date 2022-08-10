@@ -54,7 +54,7 @@
             name="birth"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field last_input">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -62,8 +62,6 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form>
       <fieldset>
         <legend>Registration</legend>
         <label class="form_field">
@@ -74,7 +72,7 @@
             placeholder="email@example.com"
           >
         </label>
-        <label class="form_field">
+        <label class="form_field last_input">
           Password:
           <input
             type="password"
@@ -82,25 +80,23 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form>
       <fieldset>
         <legend>
           An interesting fact about you!
         </legend>
         <div class="form_field">
-          Do you love cars?
+          Do you love cats?
           <label>
             <input
               type="radio"
-              name="cars"
+              name="cats"
             >
             Yes
           </label>
           <label>
             <input
               type="radio"
-              name="cars"
+              name="cats"
             >
             No
           </label>
@@ -121,7 +117,7 @@
             step="2"
           >
         </label>
-        <label for="cars">
+        <label class="form_field">
           What are your favorite brand of cars?
           <select
             id="cars"
@@ -134,7 +130,7 @@
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label class="form_field">
+        <label class="form_field last_input">
           How do you rate our work?
           <input
             type="range"
@@ -143,24 +139,18 @@
           >
         </label>
       </fieldset>
-    </form>
-    <form>
       <fieldset>
         <legend>
           Additional info:
         </legend>
         <label class="form_field">
           Comments:
-          <textarea
-            name="comment"
-            cols="15"
-            rows="2"
-          ></textarea>
+          <textarea name="comment"></textarea>
         </label>
-        <label for="recommend">
-          What you recommend?
+        <label class="form_field last_input">
+          Would you recommend us?
           <select
-            name="cars"
+            name="recommend"
             size="1"
           >
             <option value="yes">yes</option>
@@ -168,8 +158,8 @@
           </select>
         </label>
       </fieldset>
+      <button type="submit">Submit</button>
     </form>
-    <button type="submit">submit</button>
     <script
       type="text/javascript"
       src="./main.js"
