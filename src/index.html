@@ -16,6 +16,7 @@
         <legend>Personal information</legend>
         <label for="sname" class="form__list-item">Surname:
           <input
+           class="form__text"
            type="text"
            id="sname"
            autocomplete="off"
@@ -24,6 +25,7 @@
 
         <label for="name"  class="form__list-item">Name:
           <input
+           class="form__text"
            type="text"
            id="name"
            autocomplete="off"
@@ -33,7 +35,7 @@
         <label for="old" class="form__list-item">How old are You?
           <input
            id="old"
-           class="form__question"
+           class="form__question form__text"
            type="number"
            value="12"
            min="10"
@@ -42,11 +44,19 @@
         </label>
 
         <label for="birth" class="form__list-item">Full date of birth:
-          <input type="date" id="birth">
+          <input
+           class="form__text"
+           type="date"
+           id="birth" 
+          >
         </label>
 
         <label id="terms" class="form__list-item">I accept the term of the agreement
-          <input for="terms"  type="checkbox">
+          <input
+           class="form__text"
+           for="terms" 
+           type="checkbox"
+          >
         </label>
       </fieldset>
 
@@ -54,6 +64,7 @@
         <legend >Registration</legend>
         <label for="email" class="form__list-item">E-mail:
           <input
+           class="form__text"
            type="email"
            id="email"
            placeholder="email@example.com"
@@ -63,6 +74,7 @@
 
         <label for="pass"  class="form__list-item">Password:
           <input
+           class="form__text"
            type="password"
            minlength="8"
            maxlength="32"
@@ -76,6 +88,7 @@
         <legend>An interesting fact about you!</legend>
         <label for="cats" class="form__list-item">Do you love cats?
           <input
+           class="form__text"
            id="cats"
            type="radio"
            name="cats"
@@ -84,6 +97,7 @@
           >
           Yes
           <input
+           class="form__text"
            class="cats"
            type="radio"
            name="cats"
@@ -93,11 +107,16 @@
         </label>
 
         <label for="color"  class="form__list-item">What is your favorite color?
-          <input type="color" id="color">
+          <input
+           class="form__text"
+           type="color"
+           id="color"
+          >
         </label>
 
         <label for="time" class="form__list-item">What time do you go to bed?
           <input
+           class="form__text"
            id="time"
            type="time"
            step="2"
@@ -106,6 +125,7 @@
 
         <label for="cars" class="form__list-item">What are your favorite brand of cars?
           <select
+           class="form__text"
            id="cars"
            multiple
            required
@@ -122,6 +142,7 @@
 
         <label for="work" class="form__list-item">How do you rate our work?
           <input
+           class="form__text"
            id="work"
            type="range"
            value="0"
