@@ -1,8 +1,24 @@
-label {
+* {
+  box-sizing: border-box;
+}
+
+#rate {
+  margin-top: 10px;
+}
+
+#recommend {
+  margin-top: 10px;
+}
+
+#favcolor {
+  margin-top: 6px;
+}
+
+input:not(:last-child) {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-fieldset {
+fieldset:not(:last-child) {
   margin-bottom: 20px;
 }
