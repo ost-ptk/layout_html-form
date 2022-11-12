@@ -2,20 +2,22 @@
   box-sizing: border-box;
 }
 
-#rate {
-  margin-top: 10px;
+#loveCats {
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
-#recommend {
-  margin-top: 10px;
+#CARS {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-#favcolor {
-  margin-top: 6px;
+#comment {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 input:not(:last-child) {
-  display: inline-block;
   margin-bottom: 10px;
 }
 
