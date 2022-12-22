@@ -11,7 +11,204 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+      method="post"
+      class="form">
+
+      <fieldset class="group">
+        <legend>
+        Personal information
+        </legend>
+        <div class="simple">
+          <label>
+            Surname:
+            <input type="text" 
+            name="sname" 
+            required 
+            autocomplete="off"
+            >
+          </label> 
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            Name:
+            <input type="text" 
+            name="name" 
+            required 
+            autocomplete="off"
+            >
+          </label>
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            How old are You?
+            <input type="number" 
+            name="old" 
+            minlength="1" 
+            maxlength="100" 
+            placeholder="12" 
+            required
+            >
+          </label>
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            Full date of birth:
+            <input type="date" name="birth" required>
+          </label>
+        </div>
+        <div class="line"></div>
+        <div>
+          <label>
+            I accept the term of the agreement:
+            <input type="checkbox" name="accept" required>
+          </label>
+        </div>
+      </fieldset>
+    
+
+    
+      <fieldset class="group">
+        <legend>
+          Registration
+        </legend>
+        <div class="simple">
+          <label>
+            E-mail:
+            <input type="email" 
+            name="email" 
+            placeholder="email@example.com" 
+            required
+            >
+          </label>
+        </div>
+        <div class="line"></div>
+        <div>
+          <label>
+            Password:
+            <input type="password" name="pass" required>
+          </label>
+        </div>  
+      </fieldset>
+    
+      <fieldset class="group">
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <div class="simple">
+          <label>
+            Do you love cats?
+            <input 
+            type="radio" 
+            id="yes" 
+            name="cat" 
+            value="Yes"
+            >
+            <label for="yes">Yes</label>
+            <input type="radio" 
+            id="no" 
+            name="cat" 
+            value="No"
+            >
+            <label for="no">No</label>
+          </label>
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            What is your favorite color?
+            <input type="color" 
+            id="color" 
+            name="color" 
+            required
+            >
+          </label>
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            What time do you go to bad?
+            <input type="time" name="goToBad" required>
+          </label>
+        </div>
+        <div class="line"></div>
+        <div class="simple">
+          <label>
+            What are your favorite brand of cars?
+            <select name="cars" id="cars" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div class="line"></div>
+        <div>
+          <label>
+            How do you rate our work?
+            <input 
+            type="range" 
+            name="rate" 
+            minlength="1" 
+            maxlength="10" 
+            required
+            >
+          </label>
+        </div>
+      </fieldset>
+  
+    
+    
+      <fieldset class="group">
+        <legend>
+          Additional info:
+        </legend>
+        <div class="simple">
+          <label>
+            Comments:
+            <textarea 
+            name="comm" 
+            id="comm" 
+            cols="15" 
+            rows="2"
+            >
+            </textarea>
+          </label>
+        </div>
+        <div class="line"></div>
+        <div>
+          <label>
+            Would you recommend us?
+            <select name="recomend" id="recomend">
+              <option value="Yes" selected>Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+    
+   
+      <div class="simple">
+        <label>
+          <input type="submit" id="sb" value="Submit">
+        </label>
+      </div>
+    </form>
+
   </body>
 </html>
+
+
+
+
+  
+ 
+
+  
+
