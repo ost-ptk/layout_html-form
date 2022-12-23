@@ -11,3 +11,8 @@ input:last-of-type {
 fieldset {
   margin-bottom: 20px;
 }
+
+#yes,
+#no {
+  margin-bottom: 14px;
+}
