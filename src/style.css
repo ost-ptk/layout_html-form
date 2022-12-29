@@ -1,1 +1,54 @@
-/* styles go here */
+body {
+  margin: 0;
+}
+
+.main-form {
+
+  background-color: deepskyblue;
+  height: 275px;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.form-field {
+  display: block;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.first-button {
+  position: absolute;
+  left: 345px;
+  top: 250px;
+  background-color: rgb(21, 250, 21);
+  border-radius: 5px;
+}
+
+.resetbutton {
+  position: absolute;
+  left: 280px;
+  top: 250px;
+}
+
+.input-text {
+  margin-left: 10px;
+  color: rgb(40, 28, 42);
+  background-color: rgb(226, 194, 14);
+  border-radius: 5px;
+}
+/* .input-text::placeholder{
+  color:rgb(4, 249, 0);
+} */
+
+.input-text:focus {
+  background-color: chocolate;
+}
+
+.myfirstform {
+  position: absolute;
+  left: 700px;
+  height: 275px;
+  border: 1px solid transparent;
+}

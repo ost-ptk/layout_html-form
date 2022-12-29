@@ -12,6 +12,98 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <!-- якщо в форму написати novalidate - форма буде завжди пуста -->
+    <fieldset class="myfirstform">
+      <form action="<adress>" method="post"
+        class= "main-form">
+        <label class="form-field">
+        Email:
+          <input type="email"
+        name="email"
+        placeholder="email"
+        class="input-text"
+        required>
+        </label>
+        <label class="form-field">
+        Name:
+          <input type="text"
+        name="main-search1"
+        placeholder="Your Name"
+        class="input-text"
+        required>
+        </label>
+        <label class="form-field">
+        Surname :
+          <input type="text"
+        name="main-search2"
+        placeholder="Your Surname"
+        class="input-text"
+        required
+        >
+        </label>
+        <label class="form-field">
+        Insert password :
+          <input type="password"
+          name="password"
+          placeholder="please insert password"
+          class="input-text"
+          required
+          minlength="7"
+          maxlength="15">
+        </label>
+        <label class="form-field">
+        NY postcode :
+          <input type="text"
+          name="post code"
+          value="58000"
+          readonly class="input-text">
+        </label>
+        <label class="remembermebutton form-field">
+        Remember me :
+          <input type="checkbox"
+        name="rememberme"
+        checked>
+        </label>
+        <label class="form-field">
+        Are you adult?
+          <input type="checkbox"
+        name="adult"
+        required>
+        </label>
+        <button class="first-button">Push this button</button>
+        <button type="reset" class="resetbutton">Reset</button>
+        <div class="form-field">
+        Chose your sex :
+          <label class="form-field">
+        -Man
+            <input type="radio"
+        name="sex"
+        value="M">
+          </label>
+          <label class="form-field">
+            -Woman
+            <input type="radio"
+            name="sex"
+            value="W">
+          </label>
+          <div class="selectcolor">
+            <label>
+            chose favorite color :
+              <select name="Color"
+                id="select"
+                required>
+                <option value=" " selected>Select color</option>
+                <option value="#f00">Black</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+      </label>
+      </form>
+    </fieldset>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
