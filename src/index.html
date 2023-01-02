@@ -13,11 +13,11 @@
   <body>
     <h1>HTML Form</h1>
     <!-- якщо в форму написати novalidate - форма буде завжди пуста -->
-    <fieldset class="block-1 allfielset">
-      <legend>Personal information</legend>
-      <form
+    <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
+      <fieldset class="block-1 allfielset">
+        <legend>Personal information</legend>
         <label class="form-field">
         Surname:
           <input type="text"
@@ -46,12 +46,9 @@
           I accept the term of the agreement
           <input type="checkbox" name="term">
         </label>
-
-      </form>
-    </fieldset>
-    <fieldset class="block2 allfielset">
-      <legend>Registration</legend>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      </fieldset>
+      <fieldset class="block2 allfielset">
+        <legend>Registration</legend>
         <label class="form-field">
           E-mail:
           <input type="email"
@@ -67,64 +64,63 @@
           minlength="5"
           maxlength="12">
         </label>
-      </form>
-    </fieldset>
-    <fieldset class="block3 allfielset">
-      <legend>An interesting fact about you!</legend>
-      <div class="form-field">
+      </fieldset>
+      <fieldset class="block3 allfielset">
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
           Do you love cats?
-        <label class="choseone">
+          <label class="choseone">
           Yes
-          <input type="radio"
+            <input type="radio"
             name="cats"
             value="Yes">
-        </label>
-        <label class="choseone">
-          No
-          <input type="radio"
+          </label>
+          <label class="choseone">
+           No
+            <input type="radio"
             name="cats"
             value="No">
+          </label>
+        </div>
+        <label  class="form-field">
+         What is your favorite color?
+          <input type="color" name="color">
         </label>
-      </div>
-      <label  class="form-field">
-        What is your favorite color?
-        <input type="color" name="color">
-      </label>
-      <label  class="form-field">
+        <label  class="form-field">
         What time do you go to bed?
-        <input type="time" name="time">
-      </label>
-      <label  class="form-field">
+          <input type="time" name="time">
+        </label>
+        <label  class="form-field">
         What are your favorite brand of cars?
-        <select name="favoritecars" multiple>
-          <option value="BMW">BMW</option>
-          <option value="Audi">Audi</option>
-          <option value="MB">MB</option>
-        </select>
-      </label>
-      <label  class="form-field">
+          <select name="favoritecars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="MB">MB</option>
+          </select>
+        </label>
+        <label  class="form-field">
         How do you rate our work?
-        <input type="range" name="rateofwork">
-      </label>
-    </fieldset>
-    <fieldset class="block4 allfielset">
-      <legend>Additional info:</legend>
-      <label  class="form-field">
-        Comments:
-        <textarea name="Comments"
-        cols="20"
-        rows="2"></textarea>
-      </label>
-      <label  class="form-field">
-        Would you recommend us?
-        <select name="yesno">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-
-        </select>
-      </label>
-    </fieldset>
-    <button type="submit">Submit</button>
+          <input type="range" name="rateofwork">
+        </label>
+      </fieldset>
+      <fieldset class="block4 allfielset">
+        <legend>Additional info:</legend>
+        <label  class="form-field">
+          Comments:
+          <textarea name="Comments"
+          cols="20"
+          rows="2"></textarea>
+        </label>
+        <label  class="form-field">
+          Would you recommend us?
+          <select name="yesno">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
