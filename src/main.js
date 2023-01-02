@@ -18,3 +18,39 @@ function onSubmit(event) {
     `Form name: ${form.name}\nForm value: ${JSON.stringify(formValue, null, 4)}`
   );
 }
+
+// code that change 'yes' on 'no' in group 'Additional info'
+
+const options = ['yes', 'no'];
+let current = 0;
+
+function prev() {
+  if (current > 0) {
+    current--;
+  }
+  setFieldValue(options[current]);
+}
+
+function next() {
+  if (current < options.length - 1) {
+    current++;
+  }
+  setFieldValue(options[current]);
+}
+
+function setFieldValue(text) {
+  document.body.querySelector('.field').value = options[current];
+}
+
+setFieldValue(options[current]);
+
+const bottonUp = document.body.querySelector('.up');
+const bottonDown = document.body.querySelector('.down');
+
+bottonUp.addEventListener('click', () => {
+  prev();
+});
+
+bottonDown.addEventListener('click', () => {
+  next();
+});
