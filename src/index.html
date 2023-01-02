@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <!-- якщо в форму написати novalidate - форма буде завжди пуста -->
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
@@ -22,27 +21,30 @@
         Surname:
           <input type="text"
           name="surname"
-          autocomplete="off">
+          autocomplete="off"
+          >
         </label>
         <label class="form-field">
-        Name:
+          Name:
           <input type="text"
           name="name"
-          autocomplete="off">
+          autocomplete="off"
+          >
         </label>
         <label class="form-field">
-          How old are You?
+            How old are You?
           <input type="number"
           name="number"
           min="1"
           max="100"
-          value="12">
+          value="12"
+          >
         </label>
         <label class="form-field">
           Full date of birth:
           <input type="date" name="birthday">
         </label>
-        <label class="form-field">
+        <label>
           I accept the term of the agreement
           <input type="checkbox" name="term">
         </label>
@@ -55,14 +57,16 @@
           placeholder="email@example.com"
           name="email"
           required
-          autocomplete="off">
+          autocomplete="off"
+          >
         </label>
-        <label class="form-field">
+        <label>
           Password:
           <input type="password"
           name="password"
           minlength="5"
-          maxlength="12">
+          maxlength="12"
+          >
         </label>
       </fieldset>
       <fieldset class="block3 allfielset">
@@ -70,16 +74,16 @@
         <div class="form-field">
           Do you love cats?
           <label class="choseone">
-          Yes
             <input type="radio"
             name="cats"
-            value="Yes">
+            value="Yes"
+            >Yes
           </label>
           <label class="choseone">
-           No
             <input type="radio"
             name="cats"
-            value="No">
+            value="No"
+            >No
           </label>
         </div>
         <label  class="form-field">
@@ -98,7 +102,7 @@
             <option value="MB">MB</option>
           </select>
         </label>
-        <label  class="form-field">
+        <label>
         How do you rate our work?
           <input type="range" name="rateofwork">
         </label>
@@ -107,11 +111,13 @@
         <legend>Additional info:</legend>
         <label  class="form-field">
           Comments:
-          <textarea name="Comments"
+          <textarea
+          name="Comments"
           cols="20"
-          rows="2"></textarea>
+          rows="2">
+          </textarea>
         </label>
-        <label  class="form-field">
+        <label>
           Would you recommend us?
           <select name="yesno">
             <option value="yes">yes</option>
