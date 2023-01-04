@@ -1,12 +1,10 @@
 /* styles go here */
 .form-field {
   display: block;
-}
-
-.bloc {
-  margin-bottom: 20px;
-}
-
-label {
   margin-bottom: 10px;
+}
+
+.block {
+  
+  margin-bottom: 20px;
 }
