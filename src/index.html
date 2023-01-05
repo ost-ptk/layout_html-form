@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
       <fieldset class="fieldsGroup">
         <legend>Personal Information</legend>
 
-        <label for="surname">Surname:</label>
+        <label class="form__label" for="surname">Surname:</label>
         <input
           type="text"
           name="surname"
@@ -26,7 +26,7 @@
         >
         <br>
 
-        <label for="name">Name:</label>
+        <label class="form__label" for="name">Name:</label>
         <input
           type="text"
           name="name"
@@ -34,7 +34,7 @@
         >
         <br>
 
-        <label for="age">How old are you?</label>
+        <label class="form__label" for="age">How old are you?</label>
         <input
           type="number"
           name="age"
@@ -45,11 +45,14 @@
         >
         <br>
 
-        <label for="dateOfBirth">Full date of birth:</label>
-        <input type="date" name="dateOfBirth">
+        <label class="form__label" for="dateOfBirth">Full date of birth:</label>
+        <input
+          type="date"
+          name="dateOfBirth"
+        >
         <br>
 
-        <label for="termAgreement">I accept the term of the agreement</label>
+        <label class="form__label" for="termAgreement">I accept the term of the agreement</label>
         <input
           type="checkbox"
           name="termAgreement"
@@ -60,7 +63,7 @@
       <fieldset class="fieldsGroup">
         <legend>Registration</legend>
 
-        <label for="email">Email:</label>
+        <label class="form__label" for="email">Email:</label>
         <input
           type="email"
           name="email"
@@ -69,8 +72,9 @@
         >
         <br>
 
-        <label for="password">Password:</label>
-        <input type="password"
+        <label class="form__label" for="password">Password:</label>
+        <input
+          type="password"
           name="password"
           minlength="8"
           maxlength="32"
@@ -81,24 +85,24 @@
       <fieldset class="fieldsGroup">
         <legend>An interesting fact about you!</legend>
 
-        <label for="catsLover">Do you love cats?</label>
+        <label class="form__label" for="catsLover">Do you love cats?</label>
         <input
           type="radio"
           name="catsLover"
           id="catsLover"
           value="yes"
         >
-        <label for="catsLover">Yes</label>
+        <label class="form__label" for="catsLover">Yes</label>
         <input
           type="radio"
           name="catsLover"
           id="notCatsLover"
           value="no"
         >
-        <label for="notCatsLover">No</label>
+        <label class="form__label" for="notCatsLover">No</label>
         <br>
 
-        <label for="favColor">What is your favorite color?</label>
+        <label class="form__label" for="favColor">What is your favorite color?</label>
         <input
           type="color"
           name="favColor"
@@ -106,20 +110,22 @@
         >
         <br>
 
-        <label for="bedTime">What time do you go to bed?</label>
-        <input type="time" name="bedTime">
-        <br>
-
-        <label for="favCarBrands">What are your favorite brands of cars?</label>
+        <label class="form__label" for="bedTime">What time do you go to bed?</label>
         <input
-          type="text"
-          name="favCarBrands"
-          id="favCarBrands"
-          multiple
+          type="time"
+          name="bedTime"
         >
         <br>
 
-        <label for="workRating">How do you rate your work?</label>
+        <label class="form__label" for="CarBrandsSelect">What are your favorite brands of cars?</label>
+        <select name="CarBrandsSelect" multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+        <br>
+
+        <label class="form__label" for="workRating">How do you rate your work?</label>
         <input
           type="range"
           name="workRating"
@@ -130,7 +136,7 @@
       <fieldset class="fieldsGroup">
         <legend>Additional info:</legend>
 
-        <label for="comments">Comments:</label>
+        <label class="form__label" for="comments">Comments:</label>
         <textarea
           name="comments"
           id="comments"
@@ -141,7 +147,7 @@
         </textarea>
         <br>
 
-        <label for="recommendation-select">Would you recommend us?</label>
+        <label class="form__label" for="recommendation-select">Would you recommend us?</label>
         <select name="recommendation" id="recommendation-select">
           <option value="Yes">Yes</option>
           <option value="No">No</option>
