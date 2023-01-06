@@ -1,18 +1,7 @@
-/* styles go here */
-input,
-.cont {
+.input {
   margin-bottom: 10px;
 }
 
-input:last-of-type {
-  margin-bottom: 0;
-}
-
-fieldset {
+.fieldset {
   margin-bottom: 20px;
-}
-
-#yes,
-#no {
-  margin-bottom: 14px;
 }
