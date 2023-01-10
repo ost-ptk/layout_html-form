@@ -11,90 +11,105 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- якщо в форму написати novalidate - форма буде завжди пуста -->
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post">
+      method="post"
+    >
       <fieldset class="block-1 allfielset">
         <legend>Personal information</legend>
-        <label class="form-field">
+        <label class="formField">
         Surname:
-          <input type="text"
-          name="surname"
-          autocomplete="off"
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
           >
         </label>
-        <label class="form-field">
+        <label
+          class="formField">
           Name:
-          <input type="text"
-          name="name"
-          autocomplete="off"
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
           >
         </label>
-        <label class="form-field">
+        <label class="formField">
             How old are You?
           <input type="number"
-          name="number"
-          min="1"
-          max="100"
-          value="12"
+            name="number"
+            min="1"
+            max="100"
+            value="12"
           >
         </label>
-        <label class="form-field">
+        <label class="formField">
           Full date of birth:
-          <input type="date" name="birthday">
+          <input
+            type="date"
+            name="birthday">
         </label>
         <label>
           I accept the term of the agreement
-          <input type="checkbox" name="term">
+          <input
+            type="checkbox"
+            name="term">
         </label>
       </fieldset>
       <fieldset class="block2 allfielset">
         <legend>Registration</legend>
-        <label class="form-field">
+        <label class="formField">
           E-mail:
           <input type="email"
-          placeholder="email@example.com"
-          name="email"
-          required
-          autocomplete="off"
+            placeholder="email@example.com"
+            name="email"
+            required
+            autocomplete="off"
           >
         </label>
         <label>
           Password:
           <input type="password"
-          name="password"
-          minlength="5"
-          maxlength="12"
+            name="password"
+            minlength="5"
+            maxlength="12"
           >
         </label>
       </fieldset>
       <fieldset class="block3 allfielset">
         <legend>An interesting fact about you!</legend>
-        <div class="form-field">
+        <div class="formField">
           Do you love cats?
           <label class="choseone">
-            <input type="radio"
-            name="cats"
-            value="Yes"
+            <input
+              type="radio"
+              name="cats"
+              value="Yes"
             >Yes
           </label>
           <label class="choseone">
-            <input type="radio"
-            name="cats"
-            value="No"
+            <input
+              type="radio"
+              name="cats"
+              value="No"
             >No
           </label>
         </div>
-        <label  class="form-field">
+        <label  class="formField">
          What is your favorite color?
-          <input type="color" name="color">
+          <input
+            type="color"
+            name="color"
+          >
         </label>
-        <label  class="form-field">
+        <label  class="formField">
         What time do you go to bed?
-          <input type="time" name="time">
+          <input
+            type="time"
+            name="time"
+            >
         </label>
-        <label  class="form-field">
+        <label  class="formField">
         What are your favorite brand of cars?
           <select name="favoritecars" multiple>
             <option value="BMW">BMW</option>
@@ -104,12 +119,14 @@
         </label>
         <label>
         How do you rate our work?
-          <input type="range" name="rateofwork">
+          <input
+          type="range"
+          name="rateofwork">
         </label>
       </fieldset>
       <fieldset class="block4 allfielset">
         <legend>Additional info:</legend>
-        <label  class="form-field">
+        <label  class="formField">
           Comments:
           <textarea
           name="Comments"
@@ -119,7 +136,7 @@
         </label>
         <label>
           Would you recommend us?
-          <select name="yesno">
+          <select name="yesORno">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
