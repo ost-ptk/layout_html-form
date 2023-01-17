@@ -1,0 +1,21 @@
+/* styles go here */
+.simple {
+  margin-bottom: 10px;
+  display: block;
+  
+}
+
+.group {
+  
+  margin-bottom: 20px;
+  
+}/* styles go here */
+
+.line {
+  height: 1 px;
+  display: block;
+}
+
+.form {
+  margin: 0 px;
+}

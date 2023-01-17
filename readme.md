@@ -1,56 +1,53 @@
-# Frontend practice with html forms
+# HTML form
+Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://AndriiTorhashov.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://AndriiTorhashov.github.io/layout_html-form/report/html_report/)
 
-## Main goal:
-Create HTML page with form. On form submit send form data to 
-`https://mate-academy-form-lesson.herokuapp.com/create-application`
+> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+___
 
-Screenshot of this form:
+## ❗️❗️❗️ Check your code with the [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md) before ❗️❗️❗️
+
+## The task:
+Create HTML page with form. On form submit send form data to `https://mate-academy-form-lesson.herokuapp.com/create-application`
+
 ![screenshot](./references/form-example.png)
 
-## Common mistakes
-* Every field should have name attribute
-* Every field should have label, which focuses input on label click
-* Do not use tabs. Use 2 spaces for indentation
-* Most of the time you want each tag in new line
+## Notes
+- Every field should have name attribute
+- Every field should have label, which focuses input on label click
+- Do not use tabs for indentation. Instead use 2 spaces
+- Most of the time you want each tag in new line
+- Form should have different inputs with such types:
+  - [ ] text
+  - [ ] number
+  - [ ] email
+  - [ ] checkbox
+  - [ ] radio
+  - [ ] password
+  - [ ] range
+  - [ ] time
+  - [ ] color
+  - [ ] date
+- Form should have textarea and select elements.
+- You should use each of this attribute at least once
+  - [ ] required
+  - [ ] min
+  - [ ] max
+  - [ ] minlength
+  - [ ] maxlength
+  - [ ] multiple
+- Age should be at least `1` and at max `100` with a default value of `12`
+- The email field should have placeholder value: `email@example.com`.
+- Text fields should have `autocomplete="off"`.
+- `Submit` button should have a `type="submit"` 
+- Vertical distance between inputs should be `10px`
+- Vertical distance between groups should be `20px`
+- Any other styles should be browser default
 
-## Requirements:
+--> Don't forget to proofread your code using [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md)
 
-Form should have different inputs with such types:
-  - text
-  - number
-  - email
-  - checkbox
-  - radio
-  - password
-  - range
-  - time
-  - color
-  - date
-
-Also form should have textarea and select elements.
-  
-Every field should have label which focus the input by click. See reference 
-[screenshot](./references/form-example.png) for label names.
-Every field should have name attribute.
-  
-- You should use every of this attribute at least one time - required, min, max, 
-minlength, maxlength, etc
-- The number field should have default value: '12'. Add attribute 
-`data-qa="field-value"` to test it correctly.
-- The email field should have placeholder value: 'email@example.com'.
-Add attribute `data-qa="field-placeholder"` to test it correctly.
-- The text fields should have disabled autocomplete.
-- Add a button which submits the form.
-- Vertical distance between inputs should be 10px
-- Vertical distance between blocks with inputs should be 20px
-- Any other styles should be browser's default
-
----
-**Read the guideline before start**
-
-[Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
-
-**Result**
-
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+## Tips & Hints
+1. You can group fields with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
+2. The form should have correct `method` and `action`
+3. Follow the [code style guide](https://mate-academy.github.io/style-guides/htmlcss.html)
