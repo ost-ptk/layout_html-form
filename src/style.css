@@ -1,1 +1,14 @@
 /* styles go here */
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+.noPad {
+  margin-bottom: 0;
+}
