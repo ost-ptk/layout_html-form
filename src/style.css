@@ -1,26 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-#loveCats {
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-#CARS {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-#comment {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-input:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-fieldset:not(:last-child) {
+.form-fild {
   margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 10px;
 }
