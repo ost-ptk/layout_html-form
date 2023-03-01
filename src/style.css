@@ -1,0 +1,55 @@
+/* styles go here */
+.html {
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+.header {
+  text-align: center;
+}
+
+.form-field {
+  padding: 5px;
+
+}
+
+.form-label {
+  display: inline-block;
+  padding: 5px;
+}
+
+.field-age {
+  width: 40px;;
+}
+
+.field-time {
+  width: 105px;;
+}
+
+.form-submit {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* .yellow {
+  width: 3px;
+  height: 3px;
+  background-color: #f7e602;
+  color: #f7e602;
+}
+.green {
+  background-color: #029b33;
+}
+.blue {
+  background-color: #2d3291;
+}
+.red {
+  background-color: #f00;
+} */
+
+
+
+
+
+
