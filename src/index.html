@@ -12,176 +12,149 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset class="fieldset">
+      <fieldset class="form_group">
         <legend>Personal information</legend>
-        <label name="surname" class="one">
+        <label class="form_field">
           Surname:
           <input
             type="text"
-            name="surname"
-            required
+            name="Surname"
             autocomplete="off"
+            required
           >
         </label>
 
-        <label name="name" class="one">
+        <label class="form_field">
           Name:
           <input
             type="text"
-            name="name"
-            required
+            name="Name"
             autocomplete="off"
+            required
           >
         </label>
 
-        <label name="age" class="one">
+        <label class="form_field">
           How old are You?
           <input
             type="number"
-            name="age"
+            name="Age"
             min="1"
             max="100"
             value="12"
-            required
           >
         </label>
 
-        <label name="date" class="one">
+        <label class="form_field">
           Full date of birth:
-          <input
-            type="date"
-            name="date"
-            required
-          >
+          <input type="date" name="Date">
         </label>
 
-        <label name="acception" class="one">
+        <label class="form_field">
           I accept the term of the agreement
           <input
-              type="checkbox"
-              name="acception"
-              required
+            type="checkbox"
+            name="Agreed"
+            required
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset">
+      <fieldset class="form_group">
         <legend>Registration</legend>
-        <label name="email" class="one">
+        <label class="form_field">
           E-mail:
-          <input 
+          <input
             type="email"
-            name="login"
+            name="Email"
             placeholder="email@example.com"
-            required
           >
-        </label>\
+        </label>
 
-        <label name="password" class="one">
+        <label class="form_field">
           Password:
-          <input 
+          <input
             type="password"
-            name="password"
-            minlength="5"
-            maxlength="30"
-            required
+            name="Password"
+            minlength="3"
+            maxlength="32"
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset">
+      <fieldset class="form_group">
         <legend>An interesting fact about you!</legend>
-        <label class="one">
+        <div class="form_field">
           Do you love cats?
-          <label for="catsYes">
-            <input 
-              type="radio"
-              name="fact"
-              value="Yes"
-              required
-            >
-            Yes
-          </label>
-          
-          <label for="catsNo">
-            <input 
-              type="radio"
-              name="fact"
-              value="No"
-              required
-            >
-              No
-          </label>
-        </label>
+          <input
+            type="radio"
+            name="Cats"
+            value="Y"
+            id="radio-y"
+          >
+          <label for="radio-y">Yes</label>
+          <input
+            type="radio"
+            name="Cats"
+            value="N"
+            id="radio-n"
+          >
+          <label for="radio-n">No</label>
+        </div>
 
-        <label name="color" class="one">
+        <label class="form_field">
           What is your favorite color?
-          <input 
-            type="color"
-            name="color"
-            required
-          >
+          <input type="color" name="color">
         </label>
 
-        <label name="color" class="one">
+        <label class="form_field">
           What time do you go to bed?
-          <input 
-            type="time"
-            name="time"
-            required
-          >
+          <input type="time" name="Time">
         </label>
 
-        <label name="cars" class="one">
+        <label class="form_field">
           What are your favorite brand of cars?
-          <select
-            name="cars"
-            multiple
-            required
-          >
+          <select name="Car" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
+            <option value="Laba">Lada</option>
+            <option value="Brand" selected>
+            </option>
           </select>
         </label>
 
-        <label name="work" class="one">
+        <label class="form_field">
           How do you rate our work?
           <input
             type="range"
-            min="0"
-            max="100"
-            value="0"
-            required
+            name="Rate"
+            value="50"
           >
         </label>
       </fieldset>
 
-      <fieldset class="fieldset">
-        <legend>Additional info</legend>
-        <label name="comments" class="one">
+      <fieldset class="form_group">
+        <legend>Additional info:</legend>
+        <label class="form_field">
           Comments:
           <textarea
-            name="comments"
-            required
+            name="Comment"
+            cols="10"
+            rows="2"
+            wrap="hard"
          ></textarea>
         </label>
 
-        <label name="recomendation" class="one">
+        <label class="form_field">
           Would you recommend us?
-          <select>
-            <option>Yes</option>
-            <option>No</option>
+          <select name="Recommend">
+            <option value="yes" selected>yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
-
-      <input
-        type="submit"
-        class="button"
-        value="Submit"
-      >
-      <script type="text/javascript" src="./main.js"></script>
+      <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
