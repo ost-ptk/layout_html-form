@@ -11,139 +11,177 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="#" method="post">
-      <fieldset name="personal information">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <p>
-          <label for="surname">Surname: </label>
+        <label name="surname" class="one">
+          Surname:
           <input
             type="text"
-            id="surname"
+            name="surname"
+            required
             autocomplete="off"
           >
-        </p>
-        <p>
-          <label for="name">Name: </label>
+        </label>
+
+        <label name="name" class="one">
+          Name:
           <input
             type="text"
-            id="name"
+            name="name"
+            required
             autocomplete="off"
           >
-        </p>
-        <p>
-          <label for="age">How old are You? </label>
+        </label>
+
+        <label name="age" class="one">
+          How old are You?
           <input
             type="number"
-            id="age"
-            value="12"
+            name="age"
             min="1"
             max="100"
+            value="12"
+            required
           >
-        </p>
-        <p>
-          <label for="date">Full date of birth: </label>
-          <input type="date" id="date">
-        </p>
-        <p class="noPad">
-          <label for="accept">I accept the term of the agreement</label>
-          <input type="checkbox" id="accept">
-        </p>
+        </label>
+
+        <label name="date" class="one">
+          Full date of birth:
+          <input
+            type="date"
+            name="date"
+            required
+          >
+        </label>
+
+        <label name="acception" class="one">
+          I accept the term of the agreement
+          <input
+              type="checkbox"
+              name="acception"
+              required
+          >
+        </label>
       </fieldset>
 
-      <fieldset name="registration">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <p>
-          <label for="mail">E-mail: </label>
-          <input
+        <label name="email" class="one">
+          E-mail:
+          <input 
             type="email"
-            id="mail"
-            name="mail"
+            name="login"
             placeholder="email@example.com"
-          ></input>
-        </p>
-        <p class="noPad">
-          <label for="password">Password: </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            autocomplete="off"
+            required
           >
-        </p>
+        </label>\
+
+        <label name="password" class="one">
+          Password:
+          <input 
+            type="password"
+            name="password"
+            minlength="5"
+            maxlength="30"
+            required
+          >
+        </label>
       </fieldset>
 
-      <fieldset name="interesting fact">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <p>
-          <label for="cats">Do you love cats? </label>
-          <input
-            type="radio"
-            id="cats"
-            name="yescats"
-          >Yes</input>
-          <input
-            type="radio"
-            id="nocats"
-            name="nocats"
-          >No</input>
-        </p>
-        <p>
-          <label for="color">What is your favorite color? </label>
-          <input type="color" id="color">
-        </p>
-        <p>
-          <label for="time to bed">What time do you go to bed?
+        <label class="one">
+          Do you love cats?
+          <label for="catsYes">
+            <input 
+              type="radio"
+              name="fact"
+              value="Yes"
+              required
+            >
+            Yes
           </label>
-          <input
-            type="time"
-            id="time to bed"
-            name="time"
+          
+          <label for="catsNo">
+            <input 
+              type="radio"
+              name="fact"
+              value="No"
+              required
+            >
+              No
+          </label>
+        </label>
+
+        <label name="color" class="one">
+          What is your favorite color?
+          <input 
+            type="color"
+            name="color"
+            required
           >
-        </p>
-        <p>
-          <label for="car" >What are your favorite brand of cars?
-            <select size="4" id="car">
-              <option>BMW</option>
-              <option>Audi</option>
-              <option>Lada</option>
-            </select>
-          </label>
-        </p>
-        <p class="noPad">
-          <label for="rate">How do you rate our work?</label>
+        </label>
+
+        <label name="color" class="one">
+          What time do you go to bed?
+          <input 
+            type="time"
+            name="time"
+            required
+          >
+        </label>
+
+        <label name="cars" class="one">
+          What are your favorite brand of cars?
+          <select
+            name="cars"
+            multiple
+            required
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+
+        <label name="work" class="one">
+          How do you rate our work?
           <input
             type="range"
-            min="1"
-            max="5"
-            id="rate"
+            min="0"
+            max="100"
+            value="0"
+            required
           >
-        </p>
+        </label>
       </fieldset>
 
-      <fieldset name="additional info">
-        <legend>Additional info:</legend>
-        <p>
-          <label for="comments">Comments:
-            <textarea
-              id="comments"
-              name="comments"
-              autocomplete="off">
-            </textarea>
-          </label>
-        </p>
-        <p class="noPad">
-          <label for="recommend">Would you reccomend us?
-            <select id="recommend">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </label>
-        </p>
+      <fieldset class="fieldset">
+        <legend>Additional info</legend>
+        <label name="comments" class="one">
+          Comments:
+          <textarea
+            name="comments"
+            required
+         ></textarea>
+        </label>
+
+        <label name="recomendation" class="one">
+          Would you recommend us?
+          <select>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </label>
       </fieldset>
 
-      <input type="submit" value="Submit"></input>
+      <input
+        type="submit"
+        class="button"
+        value="Submit"
+      >
+      <script type="text/javascript" src="./main.js"></script>
     </form>
-
-    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
