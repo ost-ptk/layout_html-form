@@ -1,0 +1,8 @@
+.form_field:not(:last-child) {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
